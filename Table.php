@@ -1,5 +1,5 @@
 <?php
-namespace thom855j\html;
+namespace thom855j\PHPHtml;
 
 class Table
 {
