@@ -1,0 +1,8 @@
+{
+        "name": "thom855j/php-html",
+        "license": "MIT",
+        "description": "Classes useful for manipulating html and outputs on clientside",
+        "require": {
+        "php": ">=5.4.0"
+        }
+}
