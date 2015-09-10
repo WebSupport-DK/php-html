@@ -1,7 +1,7 @@
 <?php
 
 // load class
-require_once '../Form.php';
+require_once '../src/Form.php';
 
 // use class
 use thom855j\PHPHtml\Form;
