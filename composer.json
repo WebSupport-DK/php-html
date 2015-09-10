@@ -4,5 +4,10 @@
         "description": "Classes useful for manipulating html and outputs on clientside",
         "require": {
         "php": ">=5.4.0"
+        },
+    "autoload": {
+        "psr-4": {
+            "thom855j\\PHPHtml\\": "src/"
+            }
         }
 }
