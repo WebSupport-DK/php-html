@@ -1,5 +1,6 @@
 {
         "name": "thom855j/php-html",
+        "version": "dev-master",
         "license": "MIT",
         "description": "Classes useful for manipulating html and outputs on clientside",
         "require": {
