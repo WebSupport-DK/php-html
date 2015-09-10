@@ -5,7 +5,7 @@
  * To change this template file, choose Tools | Templates 
  * and open the template in the editor. 
  */ 
-namespace thom855j\html; 
+namespace thom855j\PHPHtml; 
 
 class Tag 
 { 
