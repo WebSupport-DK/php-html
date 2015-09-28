@@ -1,5 +1,5 @@
 <?php
-namespace thom855j\PHPHtml;
+namespace WebSupportDK\PHPHtml;
 
 class Output
 {
