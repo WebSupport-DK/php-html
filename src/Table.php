@@ -1,54 +1,52 @@
 <?php
-namespace WebSupportDK\PHPHtml;
+/* 
+ * Class for outputting html tables
+ */
+
+namespace Datalaere\PHPHtml;
 
 class Table
 {
-
-    public static
-            function start($options = null)
+    public static function start($options = null)
     {
         echo "<table $options>";
     }
 
-    public static
-            function rowStart($options = null)
+    public static function rowStart($options = null)
     {
         echo "<tr $options>";
     }
 
-    public static
-            function rowEnd()
+    public static function rowEnd()
     {
         echo "</tr>";
     }
 
-    public static
-            function head($inputs = array(), $options = null)
+    public static function head($inputs = array(), $options = null)
     {
         $th = '';
-        foreach ($inputs as $input)
-        {
+
+        foreach ($inputs as $input) {
             $th .= "<th $options>$input</th>";
         }
-        echo    "<thead><tr>$th</tr></thead>";
+
+        echo "<thead><tr>$th</tr></thead>";
     }
 
-    public static
-            function data($inputs = array(), $options = null)
+    public static function data($inputs = array(), $options = null)
     {
         $td = '';
-        foreach ($inputs as $input)
-        {
+
+        foreach ($inputs as $input) {
             $td .= "<td $options>$input</td>";
         }
+
         echo "</tbody><tr>$td</tr></tbody>";
     }
 
-    public static
-            function end()
+    public static function end()
     {
         echo "</table>";
-
     }
 
 }

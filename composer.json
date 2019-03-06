@@ -1,14 +1,14 @@
 {
-        "name": "websupport-dk/php-html",
-        "version": "dev-master",
-        "license": "MIT",
-        "description": "Classes useful for manipulating html and outputs on clientside",
-        "require": {
+    "name": "datalaere/php-html",
+    "version": "dev-master",
+    "license": "MIT",
+    "description": "Classes useful for manipulating html and outputs on clientside",
+    "require": {
         "php": ">=5.5.0"
-        },
+    },
     "autoload": {
         "psr-4": {
-            "WebSupportDK\\PHPHtml\\": "src/"
-            }
+            "Datalaere\\PHPHtml\\": "src/"
         }
+    }
 }

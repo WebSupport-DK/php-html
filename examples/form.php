@@ -4,7 +4,7 @@
 require_once '../src/Form.php';
 
 // use class
-use thom855j\PHPHtml\Form;
+use Datalaere\PHPHtml\Form;
 
 // start a new form with action, method,
 //  if it should parse files (set true) and exktra classes, attributes etc.

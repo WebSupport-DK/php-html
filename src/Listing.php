@@ -1,47 +1,39 @@
 <?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/* 
+ * Class for outputting html listing
  */
-namespace WebSupportDK\html;
+
+namespace Datalaere\html;
 
 class Listing
 {
-
-    public static
-            function ul($li = array(), $options = null)
+    public static function ul($li = array(), $options = null)
     {
         $data = '';
-        foreach ($li as $value)
-        {
+
+        foreach ($li as $value) {
             $data .= $value;
         }
+
         echo "<ul $options>$data</ul>";
     }
 
-    public static
-            function li($href = null, $options = null)
+    public static function li($href = null, $options = null)
     {
         return "<li $options>$href</li>";
     }
 
-    public static
-            function href($url, $name)
+    public static function href($url, $name)
     {
         return "<a href='$url'>$name</a>";
     }
 
 
-    public static
-            function loop_array($array = array(), $parent_id = 0)
+    public static function loop_array($array = array(), $parent_id = 0)
     {
-        if (!empty($array[$parent_id]))
-        {
+        if (!empty($array[$parent_id])) {
             echo '<ul>';
-            foreach ($array[$parent_id] as $items)
-            {
+            foreach ($array[$parent_id] as $items) {
                 echo "<li><a href='" .$items['Name'] ."'>";
                 echo $items['Label'];
                 echo "</a>";
@@ -52,19 +44,15 @@ class Listing
         }
     }
 
-    public static
-            function display_menus_revised($data)
+    public static function display_menus_revised($data)
     {
-
         $array = array();
 
-        if (count($data))
-        {
-            while ($rows = $data)
-            {
+        if (count($data))  {
+            while ($rows = $data) {
                 $array[$rows['Parent_ID']][] = $rows;
             }
-            self::loop_array($array);
+        self::loop_array($array);
         }
     }
 
