@@ -3,7 +3,7 @@
  * Class for outputting html listing
  */
 
-namespace Datalaere\html;
+namespace Datalaere\PHPHtml;
 
 class Listing
 {
