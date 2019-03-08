@@ -1,8 +1,10 @@
 {
     "name": "datalaere/php-html",
     "version": "dev-master",
-    "license": "MIT",
+    "type": "library",
     "description": "Classes useful for manipulating html and outputs on clientside",
+    "homepage": "https://github.com/datalaere/php-html",
+    "license": "MIT",
     "require": {
         "php": ">=5.5.0"
     },
