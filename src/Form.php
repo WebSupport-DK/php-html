@@ -1,5 +1,5 @@
 <?php
-/* 
+/*
  * Class for outputting html forms
  */
 
@@ -76,7 +76,7 @@ TEXTAREA;
 
     public static function options($key, $value, $extra = null)
     {
-       return <<<OPTIONS
+        return <<<OPTIONS
 <option value='$key' $extra>$value</option>
 OPTIONS;
     }
@@ -100,7 +100,7 @@ SELECT;
     {
         for ($x = 1; $x <= $amount; $x++) {
             echo "<br>";
-        } 
+        }
     }
     
     public static function label($for, $text, $options = null)
@@ -114,5 +114,4 @@ SELECT;
 </form>
 FORM;
     }
-
 }

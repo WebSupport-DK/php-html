@@ -1,5 +1,5 @@
 <?php
-/* 
+/*
  * Class for outputting html tables
  */
 
@@ -48,5 +48,4 @@ class Table
     {
         echo "</table>";
     }
-
 }

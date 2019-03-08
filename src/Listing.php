@@ -1,5 +1,5 @@
 <?php
-/* 
+/*
  * Class for outputting html listing
  */
 
@@ -48,12 +48,11 @@ class Listing
     {
         $array = array();
 
-        if (count($data))  {
+        if (count($data)) {
             while ($rows = $data) {
                 $array[$rows['Parent_ID']][] = $rows;
             }
-        self::loop_array($array);
+            self::loop_array($array);
         }
     }
-
 }
